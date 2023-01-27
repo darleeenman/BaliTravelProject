@@ -17,6 +17,10 @@ h3 {
   color: #fff;
 }
 h2 {
-  font-family: Bali sunrise script;
+  font-family: "bali_sunrise_scriptregular";
+  src: url("balisunrisescript-regular-webfont.woff2") format("woff2"),
+    url("balisunrisescript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
   color: #fff;
 }
