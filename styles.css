@@ -1,0 +1,22 @@
+body {
+  font-family: "Raleway", sans-serif;
+  background-image: url(https://media.gettyimages.com/id/666311758/photo/padar-island-sunset-the-icon-of-komodo-national-park-labuan-bajo-in-flores-island-east-nusa.jpg?s=2048x2048&w=gi&k=20&c=337U9kLWmHG4acOQF_AjHAOdhCBYNBtMGL8Y-dh9mOM=);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header {
+  margin: 0 auto;
+  text-align: center;
+}
+footer {
+  text-align: center;
+  color: #000;
+}
+h3 {
+  letter-spacing: 5px;
+  color: #fff;
+}
+h2 {
+  font-family: Bali sunrise script;
+  color: #fff;
+}
