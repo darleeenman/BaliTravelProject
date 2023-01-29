@@ -11,11 +11,56 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
       rel="stylesheet" />
 
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=WindSong&display=swap"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="styles.css" />
 
     <title>Welcome to Bali 🏝</title>
+    <style>
+      .cloud-mode {
+        background-color: #000;
+      }
+      button {
+        background: white;
+        color: black;
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+        border-radius: 50%;
+        border: dotted 1px;
+        position: fixed;
+        top: 10px;
+        right: 20px;
+      }
+      button:hover {
+        background: #fa7f77;
+        color: #fff;
+      }
+      .cloud-mode .container {
+        background-color: rgba(255, 255, 255, 0.794);
+        color: black;
+      }
+      .cloud-mode button {
+        background-color: #000;
+        border: dotted 1px white;
+      }
+      .cloud-mode button:hover {
+        background-color: #9b8ed2;
+      }
+      .cloud-mode h1 {
+        color: #fff;
+      }
+    </style>
   </head>
   <body>
+    <div class="cloud-mode"></div>
+    <button onClick="myFunction()">☁️</button>
     <div class="container">
       <header>
         <h3>TRAVEL</h3>
@@ -24,7 +69,51 @@
         <a href="#more">Learn More</a>
       </header>
       <br />
+      <main>
+        <section class="grid grid-2-columns">
+          <div>
+            <img
+              src="https://wallpaperaccess.com/full/373636.jpg"
+              class="img-responsive" />
+          </div>
+          <div>
+            <h2>Why Bali?</h2>
+            <h3>the Land of the Gods</h3>
+            <p>
+              There is raw beauty all over and around Bali. The island boasts a
+              myriad of impressive volcanoes, crystalline beaches, world-class
+              diving, diverse nightlife, iconic ricefields, and and gorgeous
+              waterfalls. Breathtaking hiking can be found all over the island,
+              as well as on the nearby Lombok and Java islands.
+            </p>
+            <p>
+              Also known as the Land of the Gods, Bali appeals through its sheer
+              natural beauty of looming volcanoes and lush terraced rice fields
+              that exude peace and serenity. It is also famous for surfers'
+              paradise!
+            </p>
+          </div>
+        </section>
+      </main>
       <footer>
+        <section class="grid gird-3-columns">
+          <div>
+            <h3>More about Bali</h3>
+
+            <ul>
+              <li>
+                <a href="https://www.baliairport.com/" target="_blank"
+                  >Bali Airport Guide</a
+                >
+              </li>
+              <li>
+                <a href="https://goo.gl/maps/U2XKd7e111PdHRf87" target="_blank"
+                  >Map of Bali</a
+                >
+              </li>
+            </ul>
+          </div>
+        </section>
         This project was coded by Darleen Man and is
         <a
           href="https://github.com/darleeenman/BaliTravelProject"
@@ -33,5 +122,12 @@
         >
       </footer>
     </div>
+    <script>
+      function myFunction() {
+        var element = document.body;
+
+        element.classList.toggle("cloud-mode");
+      }
+    </script>
   </body>
 </html>
