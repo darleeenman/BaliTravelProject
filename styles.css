@@ -1,22 +1,74 @@
+:root {
+  --default-color: #fff;
+  --bg-color: #121212;
+
+  --heading-font: "Amatic SC";
+  --default-font: "Raleway", sans-serif;
+}
+
 body {
-  font-family: "Raleway", sans-serif;
-  background-image: url(https://media.gettyimages.com/id/666311758/photo/padar-island-sunset-the-icon-of-komodo-national-park-labuan-bajo-in-flores-island-east-nusa.jpg?s=2048x2048&w=gi&k=20&c=337U9kLWmHG4acOQF_AjHAOdhCBYNBtMGL8Y-dh9mOM=);
-  background-size: cover;
-  background-repeat: no-repeat;
+  font-family: var(--default-font);
+  color: var(--default-color);
 }
 header {
   margin: 0 auto;
   text-align: center;
+  background-image: url(https://media.gettyimages.com/id/666311758/photo/padar-island-sunset-the-icon-of-komodo-national-park-labuan-bajo-in-flores-island-east-nusa.jpg?s=2048x2048&w=gi&k=20&c=337U9kLWmHG4acOQF_AjHAOdhCBYNBtMGL8Y-dh9mOM=);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 0;
+  font-size: 25px;
+  padding-top: 10px;
 }
 footer {
   text-align: center;
-  color: #000;
 }
-h3 {
-  letter-spacing: 5px;
-  color: #fff;
+h1 {
+  color: var(--bg-color);
 }
-h2 {
-  font-family: "bali sunrise script";
-  color: #fff;
+
+header h3 {
+  letter-spacing: 10px;
+}
+header h2 {
+  font-family: var(--heading-font);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background-color: var(--bg-color);
+}
+
+.grid {
+  display: grid;
+  grid-gap: 50px;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--default-color);
+}
+
+li {
+  list-style: none;
 }
