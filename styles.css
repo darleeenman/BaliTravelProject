@@ -42,23 +42,41 @@ header h2 {
 
 .grid {
   display: grid;
-  grid-gap: 50px;
+  grid-gap: 64px;
 }
 
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
+  padding: 60px;
 }
 
 .grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 60px;
+  line-height: 1.5;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.grid-3-columns-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
 section {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 0;
 }
@@ -71,4 +89,75 @@ a:hover {
 
 li {
   list-style: none;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 30px;
+  color: var(--bg-color);
+}
+
+.card-footer {
+  padding: 0 30px 30px;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 15px;
+  background-color: #9b8ed2;
+  text-decoration: none;
+}
+
+section.secondary {
+  background: #f8f8f8;
+  color: var(--bg-color);
+}
+
+main {
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+.card-body h5 {
+  margin-bottom: 0;
+}
+.card-body p {
+  margin-top: 0;
+}
+
+
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+  header h1 {
+    font-size: 48px;
+  }
+  header h2 {
+    font-size: 20px;
+  }
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+  section {
+    padding: 30px;
+  }
 }
