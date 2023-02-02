@@ -73,6 +73,7 @@ img {
 
 .grid-3-columns-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+  padding-top: 0;
 }
 
 section {
@@ -137,7 +138,6 @@ main {
 .card-body p {
   margin-top: 0;
 }
-
 
 @media (max-width: 960px) {
   header {
