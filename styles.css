@@ -2,8 +2,9 @@
   --default-color: #fff;
   --bg-color: #121212;
 
-  --heading-font: "Amatic SC";
+  --heading-font: "WindSong";
   --default-font: "Raleway", sans-serif;
+  --section-font: "Amatic SC";
 }
 
 body {
@@ -69,6 +70,10 @@ iframe {
 img {
   overflow-clip-margin: content-box;
   overflow: clip;
+}
+
+img:hover {
+  filter: contrast(45%);
 }
 
 .grid-3-columns-narrow {
